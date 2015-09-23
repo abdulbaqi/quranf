@@ -1,12 +1,14 @@
 #!usr/bin/env python
 
 from flask import Flask
+from q import Q
 
 app = Flask(__name__)
+quran = Q()
 
-@app.route('/<int:chapter>/<int:verse>')
+@app.route('/<chapter>/<verse>')
 def renderq(chapter,verse):
-	return "here is chapter %d verse %d"%(chapter,verse)
+	return quran.get(chapter+':'+verse)
  
 @app.route('/')
 def index():

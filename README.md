@@ -19,4 +19,12 @@ http://data-abdulbaqi.c9.io
 #v0.3
 
 added a new route (/chapter/verse) with a mock message
-#
+
+#v0.4
+
+This version does a significant improvement over the last version.
+
+It brought the Quranic text from http://tanzil.net/download/
+
+It then created a new py file called `q.py` which contans Q class to load the Quran into a dictionary and a function within this class to return a verse given its number.
+
