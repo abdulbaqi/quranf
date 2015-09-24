@@ -19,6 +19,10 @@ def index():
 def renderq(chapter,verse):
 	return render_template('verse.html',verse=quran.get(chapter+':'+verse))
 
+@app.route('/<chapter>')
+def renders(chapter):
+	return render_template('sura.html', sura=quran.gsura(chapter))
+
 @app.errorhandler(QError)
 @app.errorhandler(404)
 def runtime_error(e):

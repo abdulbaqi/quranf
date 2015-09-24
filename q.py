@@ -1,3 +1,4 @@
+from collections import OrderedDict
 class QError(RuntimeError):
 	pass
 
@@ -7,7 +8,7 @@ class Q:
 
  def __init__(self):
 	file = open('quran-simple-clean.txt','r')
-	self.data={}
+	self.data=OrderedDict()
 
 	for line in file:
 	 lsplit = line.split('|')
@@ -19,3 +20,15 @@ class Q:
 	  raise QError('not a valid verse no.')
 	return self.data[id]
 
+
+
+ def gsura(self, id='1'):
+	result = []
+	found = False
+	for key in self.data:
+		if id == key.split(':')[0]:
+	          result.append(key.split(':')[1]+"-"+self.data[key])
+		  found = True
+	if not found:
+	 raise QError('not a valid sura')
+	return result
