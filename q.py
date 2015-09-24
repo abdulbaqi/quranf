@@ -1,4 +1,9 @@
-class Q():
+class QError(RuntimeError):
+	pass
+
+
+class Q:
+
 
  def __init__(self):
 	file = open('quran-simple-clean.txt','r')
@@ -10,5 +15,7 @@ class Q():
 	 self.data[chapter+':'+verse]=text
 
  def get(self,id='1:1'):
+	if id not in self.data:
+	  raise QError('not a valid verse no.')
 	return self.data[id]
 

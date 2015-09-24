@@ -33,3 +33,10 @@ It then created a new py file called `q.py` which contans Q class to load the Qu
 Here I created templates folder and made two templates.
 
 Note the special handling of utf-8 unicode in the main quran.py file. 
+
+
+#v0.6 - Error handlind
+
+created `QError` class in `q.py` and made necessary adjustment in the main `quran.py` file
+
+also, added a license file
