@@ -44,3 +44,11 @@ also, added a license file
 #v0.7 - Display Surah
 
 I have introduced a new URL route `(/chapter)` which will allow users to enter a sura number and the whole sura will be displayed. In order to do that, I had to change the data type of the Quran into an `OrderedDict`. Also a new template is created. 
+
+#v0.8 - CSS and Arabic Font
+
+replaced the simple quran text file with Uthmani scripts from the tanzil.net project.
+
+some final touches to render Arabic fonts in google's Droid Kufi style and bigger font size.. also, the text direction is changed to right-to-left
+
+also adjusted the error messages properly.

@@ -7,7 +7,7 @@ class Q:
 
 
  def __init__(self):
-	file = open('quran-simple-clean.txt','r')
+	file = open('quran-uthmani-min.txt','r')
 	self.data=OrderedDict()
 
 	for line in file:

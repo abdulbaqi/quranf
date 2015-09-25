@@ -26,7 +26,7 @@ def renders(chapter):
 @app.errorhandler(QError)
 @app.errorhandler(404)
 def runtime_error(e):
- return 'error : this verse does not exist'
+ return 'error : %s'%e
 
 
 if __name__=='__main__':
