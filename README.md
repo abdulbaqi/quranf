@@ -52,3 +52,8 @@ replaced the simple quran text file with Uthmani scripts from the tanzil.net pro
 some final touches to render Arabic fonts in google's Droid Kufi style and bigger font size.. also, the text direction is changed to right-to-left
 
 also adjusted the error messages properly.
+
+#v1
+
+app released on heroku
+http://protected-ocean-1734.herokuapp.com/ 
