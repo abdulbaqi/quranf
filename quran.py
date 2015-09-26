@@ -1,4 +1,5 @@
 #!usr/bin/env python
+import os
 
 from flask import Flask, render_template
 from q import Q, QError
@@ -28,6 +29,8 @@ def renders(chapter):
 def runtime_error(e):
  return 'error : %s'%e
 
+#I am commenting the following two lines before depolying into heroku
+#uncomment them when still in developing mode
 
-if __name__=='__main__':
-	app.run(host='0.0.0.0', port=8080, debug=False)  
+#if __name__=='__main__':
+#	app.run(host='0.0.0.0', port=8080, debug=False)  
